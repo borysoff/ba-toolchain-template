@@ -44,7 +44,7 @@
 ## 4. Methodological Tailoring
 *How are we executing this BA work?*
 
-**Selected Delivery Methodology**: Hybrid
+**Selected Delivery Methodology**: [To be determined during Plan BA Approach unless specified in Preparation documents]
 **Required BABOK Knowledge Areas to Scaffold:** 
 *The agent will determine which of the 6 areas are necessary and scaffold the appropriate directories based on this list.*
 - [x] 01. Planning and Monitoring

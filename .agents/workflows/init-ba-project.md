@@ -20,6 +20,7 @@ Agent Initialization:
 
 # 3. Iterative Q&A
 - After analyzing the documents (or if starting from scratch), identify which mandatory fields in `BA_Project_Checkpoint.md` are still missing or require clarification.
+- **CRITICAL EXCEPTION:** Do NOT ask the BA about their "Delivery Methodology" (e.g., Agile or Waterfall). This decision is formally made during the "Plan BA Approach" task, unless it was explicitly mandated in the provided Preparation documents.
 - Ask the BA the missing questions **STRICTLY ONE AT A TIME**. Do NOT ask multiple questions in a single message.
 - Wait for the BA to answer the single question before moving to the next one.
 - As the BA answers, dynamically update `BA_Project_Checkpoint.md` in the background. Address them conversationally while doing so.
