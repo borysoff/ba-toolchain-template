@@ -6,10 +6,10 @@
 ## 1. Project Identity & Baseline
 *What is the core purpose of this initiative?*
 
-**Project Name:** [To be populated by Agent]
-**Domain / Industry:** [To be populated by Agent]
+**Project Name:** ACME Retail
+**Domain / Industry:** Consumer electronic sales
 **Primary Business Problem:** 
-- [Empty]
+- Move accounting and sales from legacy systems to Dynamics 365 BC
 
 ---
 
@@ -17,10 +17,13 @@
 *Who cares about this, and what limits our execution?*
 
 **Key Stakeholder Groups:**
-1. [Empty]
+1. Accounting department
+2. CFO
+3. Sales department
+4. Fulfillment department
 
 **Known Constraints (Budget, Time, Tech):**
-- [Empty]
+- TBD (To be determined at a later stage)
 
 ---
 
@@ -28,24 +31,27 @@
 *What is in, and what is explicitly out?*
 
 **In-Scope:**
-- [Empty]
+- General ledger
+- P&L
+- Sales forecast
+- Order fulfillment
 
 **Out-of-Scope:**
-- [Empty]
+- Warehouse management
 
 ---
 
 ## 4. Methodological Tailoring
 *How are we executing this BA work?*
 
-**Selected Delivery Methodology** (Agile, Waterfall, Hybrid): [Empty]
+**Selected Delivery Methodology**: Hybrid
 **Required BABOK Knowledge Areas to Scaffold:** 
 *The agent will determine which of the 6 areas are necessary and scaffold the appropriate directories based on this list.*
-- [ ] 01. Planning and Monitoring
-- [ ] 02. Elicitation and Collaboration
-- [ ] 03. Requirements Life Cycle Management
+- [x] 01. Planning and Monitoring
+- [x] 02. Elicitation and Collaboration
+- [x] 03. Requirements Life Cycle Management
 - [ ] 04. Strategy Analysis
-- [ ] 05. Requirements Analysis and Design Definition
+- [x] 05. Requirements Analysis and Design Definition
 - [ ] 06. Solution Evaluation
 
 ---
