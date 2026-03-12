@@ -226,20 +226,22 @@ Key sections to complete:
 
 ```mermaid
 graph TD
-    A[Clone Repository] --> B[/init-ba-project/]
+    A[Clone Repository] --> B["#47;init-ba-project"]
     B --> C{Documents in 00_Preparation?}
-    C -->|Yes| D[Agent reads & pre-fills Checkpoint]
+    C -->|Yes| D[Agent reads and pre-fills Checkpoint]
     C -->|No| E[Agent asks questions one at a time]
     D --> F[BA_Project_Checkpoint.md complete]
     E --> F
-    F --> G[/plan-ba-approach/]
+    F --> G["#47;plan-ba-approach"]
     G --> H[BA_Approach_v1.md]
-    H --> I[/stakeholder-register/]
-    H --> J[/risk-register/]
-    H --> K[/scope-model/]
-    I & J & K --> L[Fill governance-rules-template.md]
+    H --> I["#47;stakeholder-register"]
+    H --> J["#47;risk-register"]
+    H --> K["#47;scope-model"]
+    I --> L[Fill governance-rules-template.md]
+    J --> L
+    K --> L
     L --> M[Build domain Skills as needed]
-    M --> N[/performance-review/ at each milestone]
+    M --> N["#47;performance-review at each milestone"]
 ```
 
 ---
