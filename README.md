@@ -16,7 +16,7 @@ Built on the **BABOK® Guide v3**, it currently covers **Knowledge Area 1: Busin
 ## Quickstart
 
 ```bash
-git clone <this-repo> my-project-name
+git clone https://github.com/borysoff/ba-toolchain-template.git my-project-name
 cd my-project-name
 # Open the folder in Antigravity IDE, then:
 ```
