@@ -1,0 +1,4 @@
+# .gitignore
+
+# Internal setup and reference documents — not part of the deployable toolchain
+99_Setup_Docs/
