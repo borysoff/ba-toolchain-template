@@ -54,18 +54,18 @@ Once initialized, the BA runs additional tools as the project progresses. Each t
 
 ```
 /
-├── 00_Preparation/                             ← Drop SOWs, charters, emails here before init
-├── 01_Planning_and_Monitoring/                         ← Generated artefacts land here
+├── 00_Preparation/                 ← Drop SOWs, charters, emails here before init
+├── 01_Planning_and_Monitoring/                 ← Generated artefacts land here
 ├── 02_Elicitation_and_Collaboration/
 ├── 03_Requirements_Life_Cycle_Management/
 ├── 04_Strategy_Analysis/
 ├── 05_Requirements_Analysis_and_Design_Definition/
 ├── 06_Solution_Evaluation/
 ├── .agents/
-│   ├── workflows/                              ← Slash command scripts
-│   ├── skills/skill-template/                  ← Copy to create domain compliance skills
-│   └── rules/                                  ← Standing governance instructions for the agent
-├── BA_Project_Checkpoint.md                    ← Central context anchor (filled by agent)
+│   ├── workflows/                 ← Slash command scripts
+│   ├── skills/skill-template/     ← Copy to create domain compliance skills
+│   └── rules/                     ← Standing governance instructions for the agent
+├── BA_Project_Checkpoint.md       ← Central context anchor (filled by agent)
 └── README.md
 ```
 
@@ -248,7 +248,9 @@ graph TD
 
 - [ ] KA2: Elicitation & Collaboration tools
 - [ ] KA3: Requirements Life Cycle Management tools
+- [ ] KA4: Strategy Analysis
 - [ ] KA5: Requirements Analysis & Design Definition tools
+- [ ] KA6: Solution Evaluation
 
 ---
 
