@@ -231,6 +231,43 @@ The official record of all elicitation sessions, with coverage tracker by In-Sco
 Log a new session: [stakeholder], [date], [method], [topic]
 ```
 
+#### Workshop Guide
+**File:** `.agents/workflows/workshop-guide.md`
+**Output:** `02_Elicitation_and_Collaboration/Workshop_Guide_[Topic]_v1.md`
+
+Use for multi-stakeholder sessions (workshops, focus groups, review meetings). The agent reads the Conflict Register and context anchors, then generates a timed agenda with pre-workshop reading list, structured elicitation blocks, decision capture section, and facilitation risk notes for this specific group.
+
+```
+/workshop-guide
+```
+
+#### Business Rules Capture
+**File:** `02_Elicitation_and_Collaboration/Business_Rules_Capture.md`
+
+Catalogue of all business rules identified during elicitation. Organised by type (Definitional, Behavioural, Derivation, Constraint) with source, owner, and status tracking. Disputed rules are escalated to a dedicated section. To append a rule via the agent:
+```
+Log a business rule: [description]
+```
+
+#### Process Model
+**File:** `.agents/workflows/process-model.md`
+**Output:** `02_Elicitation_and_Collaboration/Process_Model_[Name]_[AsIs|ToBe]_v1.md`
+
+Generates a **Mermaid swimlane flowchart** from a verbal description of a business process. The agent asks for the process name, actors, steps, and decision points — then builds the diagram automatically. Run twice (once for As-Is, once for To-Be) to document the gap.
+
+```
+/process-model
+```
+
+#### Survey Template
+**File:** `02_Elicitation_and_Collaboration/Survey_Template.md`
+
+Structured questionnaire template for large or distributed stakeholder groups. Contains Likert-scale and open-ended question sections. After collecting responses, paste them back into the file and say:
+```
+Analyse the survey responses in Survey_Template.md
+```
+The agent produces a Frequency Summary, outlier flags, and recommended follow-up actions.
+
 ---
 
 #### Issue Log
