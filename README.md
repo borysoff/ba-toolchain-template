@@ -171,7 +171,67 @@ Run at any stage gate or milestone. The agent asks you to define your KPI target
 
 ---
 
+### 📋 KA2 Workflows
+
+#### `/prepare-elicitation`
+**File:** `.agents/workflows/prepare-elicitation.md`
+**Output:** `02_Elicitation_and_Collaboration/Session_Guide_[Stakeholder]_v1.md`
+
+Builds a targeted elicitation session guide for a specific stakeholder. The agent reads context anchors, the Stakeholder Register, and any preparation documents before asking a minimum of questions. Produces a structured guide with pre-session reading list, targeted probe questions (max 8), and a conflict watchlist based on what is already known.
+
+```
+/prepare-elicitation
+```
+
+> **Note:** If no context anchor exists for the stakeholder yet, the workflow creates one from the `ctx_session_anchor.md` template automatically.
+
+---
+
+#### `/conflict-register`
+**File:** `.agents/workflows/conflict-register.md`
+**Output:** `02_Elicitation_and_Collaboration/Conflict_Register_v1.md`
+
+Reads one or more raw session transcripts from `02_Elicitation_and_Collaboration/` and synthesizes them against the Project Charter and Checkpoint. Classifies every stakeholder statement as:
+- ✅ **Underlying Need** — directly tied to the business problem
+- ⚠️ **Stated Want** — preference not directly tied to the core problem
+- 🔴 **Potential Conflict** — contradicts another stakeholder or the Charter
+
+```
+/conflict-register
+```
+
+---
+
+#### `/verify-elicitation`
+**File:** `.agents/workflows/verify-elicitation.md`
+**Output:** `02_Elicitation_and_Collaboration/Elicitation_Verification_Report_v1.md`
+
+Quality gate before baselining requirements. Checks that every In-Scope area has at least one confirmed elicitation session, every stakeholder has been heard, all blocking conflicts are resolved, and all open questions from context anchors are answered. Issues a clear ✅ / ⚠️ / ❌ verdict.
+
+```
+/verify-elicitation
+```
+
+---
+
 ### 📄 Templates
+
+#### Context Anchor
+**File:** `02_Elicitation_and_Collaboration/ctx_session_anchor.md`
+
+The core bounding mechanism for elicitation sessions. Fill one in per stakeholder group before running `/prepare-elicitation`. Captures: stakeholder profile, domain constraints, known conflicts, open questions, and out-of-bounds topics. The agent reads this before generating any session guide or synthesis involving this stakeholder.
+
+Copy and rename to `ctx_[stakeholder_name].md` for each stakeholder.
+
+#### Elicitation Log
+**File:** `02_Elicitation_and_Collaboration/Elicitation_Log.md`
+
+The official record of all elicitation sessions, with coverage tracker by In-Scope area. To append a session record via the agent:
+```
+Log a new session: [stakeholder], [date], [method], [topic]
+```
+
+---
 
 #### Issue Log
 **File:** `01_Planning_and_Monitoring/Issue_Log.md`
@@ -248,7 +308,7 @@ graph TD
 
 ## Roadmap
 
-- [ ] KA2: Elicitation & Collaboration tools
+- [x] KA2: Elicitation & Collaboration tools
 - [ ] KA3: Requirements Life Cycle Management tools
 - [ ] KA4: Strategy Analysis
 - [ ] KA5: Requirements Analysis & Design Definition tools
